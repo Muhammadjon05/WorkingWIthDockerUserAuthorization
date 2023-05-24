@@ -1,0 +1,22 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  posgresstask:
+    build:
+      context: "C:\\Users\\Muhammadjon\\RiderProjects\\PosgressTask"
+      dockerfile: "PosgressTask/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/PosgressTask.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+    image: "posgresstask:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Muhammadjon\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\Muhammadjon\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "C:\\Users\\Muhammadjon\\RiderProjects\\PosgressTask\\PosgressTask:/app:rw"
+    working_dir: "/app"
